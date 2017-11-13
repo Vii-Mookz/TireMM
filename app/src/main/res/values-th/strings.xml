@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tires Management</string>
+    <string name="alert">แจ้งเตือน</string>
+    <string name="dialog_save">คุณต้องการบันทึกข้อมูลใช่หรือไม่</string>
+    <string name="yes">ตกลง</string>
+    <string name="no">ยกเลิก</string>
+    <string name="checkList_letter">ตรวจเช็คลมยางและความลึกดอกยาง</string>
+    <string name="username">ชื่อผู้ใช้งาน</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="Save">บันทึก</string>
+    <string name="alert_logout">คุณต้องการออกจากระบบใช่หรือไม่?</string>
+    <string name="login_success">เข้าสู่ระบบสำเร็จ!!</string>
+    <string name="login_fail">เข้าสู่ระบบผิดพลาด กรุณาตรวจสอบ ชื่อผู้ใช้งาน/รหัสผ่าน อีกครั้ง</string>
+    <string name="odo">ไมล์สะสม</string>
+    <string name="pressure">แรงดันลมยาง</string>
+    <string name="deep_tread">ความลึกของดอกยาง</string>
+    <string name="reason">กรุณาเลือกเหตุผล</string>
+    <string name="add_success">บันทึกข้อมูลสำเร็จ!!</string>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Tires Management</string>
+
+    <string name="checkList_letter">Check tire pressure and tread depth</string>
+    <string name="alert">Alert</string>
+    <string name="dialog_save">Do you want to save?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="username">Usernname</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="Save">Save</string>
+    <string name="alert_logout">Do you want to logout?</string>
+    <string name="login_success">Login Successful!!</string>
+    <string name="login_fail">Login Fail Please Try Again!!</string>
+    <string name="odo">ODO</string>
+    <string name="pressure">Pressure</string>
+    <string name="deep_tread">Deep Tread</string>
+<string name="reason">Select Reason</string>
+    <string name="add_success">Add Checklist Successful!!</string>
+    <item type="id" name="Tire_ID"/>
+    <item type="id" name="Tire_Serial"/>
+</resources>
