@@ -34,10 +34,11 @@ import okhttp3.Response;
 
 public class CheckListActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
-
+     
     private ListView myListView;
     private SearchView mySearchView;
     private String urlJSON, username;
+    ArrayAdapter arrayAdapter;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -156,11 +157,11 @@ public class CheckListActivity extends AppCompatActivity implements SearchView.O
                 }
 
 
-                final ArrayAdapter arrayAdapter = new ArrayAdapter(context, R.layout.support_simple_spinner_dropdown_item, licenseStrings);
+                arrayAdapter = new ArrayAdapter(context, R.layout.support_simple_spinner_dropdown_item, licenseStrings);
                 listView.setTextFilterEnabled(true);
-                //   filter = arrayAdapter.getFilter();
-                listView.setAdapter(arrayAdapter);
 
+                listView.setAdapter(arrayAdapter);
+                arrayAdapter.getFilter();
                 setUpSearchView();
 
                 // Onclick on by item
@@ -220,6 +221,7 @@ public class CheckListActivity extends AppCompatActivity implements SearchView.O
         mySearchView.setSubmitButtonEnabled(true);
 
         mySearchView.setQueryHint("Search Vehicle");
+
     }
 
     @Override
@@ -230,13 +232,15 @@ public class CheckListActivity extends AppCompatActivity implements SearchView.O
 
     @Override
     public boolean onQueryTextChange(String newText) {
+
         if (TextUtils.isEmpty(newText)) {
             myListView.clearTextFilter();
         } else {
-            myListView.setFilterText(newText.toString());
-
+            myListView.setFilterText(newText.toString().trim());
+//            arrayAdapter.getFilter().filter(newText);
             //filter.filter(newText);
         }
+
         return true;
     }
 

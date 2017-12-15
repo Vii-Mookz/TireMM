@@ -42,7 +42,7 @@ public class AddCheckListActivity extends AppCompatActivity {
             dateString,url,username,urlReason,reasonIdString,reasonNameString,reasonId2String,reasonName2String;
     private DatePicker checkDatePicker;
     private Spinner reason1Spinner, reason2Spinner;
-    private Button btn_save;
+    private Button btn_save,btn_test;
     static final int  DATE_DIALOG_ID = 999;
 
     @Override
@@ -63,11 +63,13 @@ public class AddCheckListActivity extends AppCompatActivity {
         reason2Spinner = (Spinner) findViewById(R.id.spinner2);
         btn_save = (Button) findViewById(R.id.saveAddCheckList);
 
+
         setCurrentDateOnView();
 
         tireIdString = getIntent().getStringExtra("ID");
         serialString = getIntent().getStringExtra("Serial");
         username = getIntent().getStringExtra("username");
+
 
         tireIdTextView.setText("Tire Series :  " + serialString);
 
@@ -281,6 +283,8 @@ public class AddCheckListActivity extends AppCompatActivity {
             }
 
         });
+
+
     }
 
 }//main class

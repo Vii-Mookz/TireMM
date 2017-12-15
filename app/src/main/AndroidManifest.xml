@@ -21,9 +21,7 @@
         <activity android:name="com.hitachi_tstv.mist.it.tiresmanagement.CheckList2Activity" />
         <activity android:name="com.hitachi_tstv.mist.it.tiresmanagement.itemVehicleActivity" />
         <activity android:name="com.hitachi_tstv.mist.it.tiresmanagement.AddCheckListActivity"></activity>
-
-
-
+        
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="cf8687190c8b0f12730f7b2c97a1e5ae49aefdb9" />
